@@ -18,6 +18,20 @@ img {
     padding-bottom: 10px;
 }
 
+.hero-image {
+    text-align: center; /* 画像を中央寄せ */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    max-width: 80%; /* 必要に応じて画像の最大幅を調整 */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1, h2, h3, h4 {
     text-align: center;
     margin-top: 20px;
