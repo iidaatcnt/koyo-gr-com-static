@@ -1,18 +1,28 @@
 body {
-    font-family: sans-serif;
-    line-height: 1.6;
+    font-family: "Noto Serif JP", serif, sans-serif; /* 和風フォントを優先 */
+    line-height: 1.8; /* 行間を広げて読みやすく */
     margin: 20px;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
-    color: #333; /* 基本的な文字色 */
+    color: #444; /* 基本的な文字色を少し濃く */
+}
+
+/* サイトロゴのスタイル */
+.site-logo {
+    max-width: 200px; /* ロゴの最大幅を調整 */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* 画像をブロック要素にして中央寄せを可能にする */
+    display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
@@ -20,13 +30,13 @@ img {
 }
 
 .hero-image {
-    text-align: center; /* 画像を中央寄せ */
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .hero-image img {
-    max-width: 80%; /* 必要に応じて画像の最大幅を調整 */
+    max-width: 80%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -35,42 +45,66 @@ img {
 
 h1, h2, h3, h4 {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #0056b3; /* 見出しの色 */
+    margin-top: 30px; /* 上部の余白を増やす */
+    margin-bottom: 15px; /* 下部の余白を増やす */
+    font-weight: normal; /* 太字を強調しすぎない */
+}
+
+h1 {
+    font-size: 2.5em; /* 大きめのフォントサイズ */
+    color: #2c3e50; /* 深い藍色 */
+    padding-bottom: 10px;
+    border-bottom: 3px double #a0a0a0; /* 二重線の下線 */
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #556b2f; /* 落ち着いた緑色 */
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
 }
 
 h3 {
-    border-bottom: 2px solid #0056b3; /* 下線 */
-    padding-bottom: 5px;
+    font-size: 1.5em;
+    color: #8b4513; /* 茶色系 */
+    border-bottom: 2px solid #8b4513; /* 下線 */
+    padding-bottom: 8px;
     margin-bottom: 20px;
+    background-color: #fdf5e6; /* わずかにベージュ系の背景 */
+    padding-top: 8px;
 }
 
 h4 {
-    background-color: #f0f8ff; /* 背景色 */
-    padding: 10px;
-    border-left: 5px solid #0056b3; /* 左側のボーダー */
+    font-size: 1.2em;
+    color: #4682b4; /* 落ち着いた青色 */
+    background-color: #e0f2f7; /* 薄い水色の背景 */
+    padding: 8px 15px;
+    border-left: 5px solid #4682b4; /* 左側のボーダー */
     margin-bottom: 15px;
+    text-align: left; /* h4は左寄せにしてみる */
 }
 
 ul {
-    list-style-type: none; /* デフォルトのリストスタイルを削除 */
+    list-style-type: none;
     padding: 0;
     margin-left: 0;
     margin-bottom: 20px;
 }
 
 ul li {
-    border-bottom: 1px dashed #ccc; /* 各項目に点線の下線 */
-    padding: 10px 0;
+    border-bottom: 1px dashed #d3d3d3; /* より薄い点線の下線 */
+    padding: 12px 0; /* パディングを増やす */
 }
 
 ul li:last-child {
-    border-bottom: none; /* 最後の項目には下線をつけない */
+    border-bottom: none;
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* 段落の余白を増やす */
 }
 
 /* 会社概要テーブルのスタイル */
@@ -81,12 +115,13 @@ p {
 }
 
 #company-info th, #company-info td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid #e0e0e0; /* 罫線を薄く */
+    padding: 10px; /* パディングを増やす */
     text-align: left;
 }
 
 #company-info th {
-    background-color: #f2f2f2;
-    width: 30%; /* 見出しの幅を調整 */
+    background-color: #f9f9f9; /* 背景色を薄く */
+    width: 30%;
+    font-weight: bold;
 }
