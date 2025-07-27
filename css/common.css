@@ -125,3 +125,47 @@ p {
     width: 30%;
     font-weight: bold;
 }
+
+/* スマートフォン対応 */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        padding: 0 10px;
+    }
+
+    .site-logo {
+        max-width: 150px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    #company-info th,
+    #company-info td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #company-info th {
+        text-align: center;
+        background-color: #f2f2f2;
+    }
+}
